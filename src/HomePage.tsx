@@ -626,12 +626,13 @@ function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">联系我们</h4>
-            <ul className="space-y-2 text-gray-400">
-              <li>客服热线：400-888-9999</li>
-              <li>邮箱：contact@yujian.health</li>
-              <li>工作时间：9:00-21:00</li>
-            </ul>
+            <h4 className="font-semibold mb-4">关注我们</h4>
+            <img
+              src="/qrcode_for_gh_86c516276021_258.jpg"
+              alt="微信公众号二维码"
+              className="w-32 h-32 rounded-lg shadow-lg object-cover"
+            />
+            <p className="text-gray-400 text-sm mt-2">微信公众号</p>
           </div>
         </div>
 
