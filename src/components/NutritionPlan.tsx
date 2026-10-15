@@ -2,7 +2,7 @@ import { useState } from 'react'
 import {
   Calendar, Clock, Flame, Droplets, Apple, Beef,
   Sun, Moon, Coffee, AlertTriangle, CheckCircle, RefreshCw,
-  Download, Share2, ChevronLeft, ChevronRight, Star
+  Download, Share2
 } from 'lucide-react'
 
 interface NutritionPlanProps {

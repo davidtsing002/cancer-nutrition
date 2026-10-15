@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from 'react'
 import {
-  Brain, Zap, Shield, Clock, Heart, Users, Sparkles, ArrowRight,
+  Brain, Zap, Shield, Clock, Heart, Users, Sparkles,
   CheckCircle, AlertTriangle, ChevronDown, MessageCircle, X,
-  Stethoscope, Utensils, Activity, Pill, ClipboardCheck, RefreshCw
+  Utensils, Activity, ClipboardCheck, RefreshCw
 } from 'lucide-react'
 import PatientForm from './components/PatientForm'
 import NutritionPlan from './components/NutritionPlan'

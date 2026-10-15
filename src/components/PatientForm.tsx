@@ -203,7 +203,7 @@ export default function PatientForm({ onSubmit }: PatientFormProps) {
               {formData.height && formData.weight && (
                 <p className="text-cyan-600">
                   您的BMI为：<span className="font-bold text-lg">
-                    {(formData.weight / Math.pow(formData.height / 100, 2)).toFixed(1)}
+                    {(Number(formData.weight) / Math.pow(Number(formData.height) / 100, 2)).toFixed(1)}
                   </span>
                 </p>
               )}
