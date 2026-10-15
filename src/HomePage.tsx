@@ -45,7 +45,7 @@ function CountUp({ end, duration = 2000, suffix = '' }: { end: number; duration?
 // Hero 区组件
 function HeroSection({ onStartAssessment }: { onStartAssessment: () => void }) {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-hero-gradient bg-hero-pattern overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center hero-bg overflow-hidden">
       {/* 背景装饰 */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-10 w-72 h-72 bg-cyan-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float" />
@@ -260,7 +260,7 @@ function ProcessSection() {
   ]
 
   return (
-    <section className="py-24 bg-gradient-to-b from-cyan-50 to-white">
+    <section id="process" className="py-24 bg-gradient-to-b from-cyan-50 to-white">
       <div className="container-custom">
         <div className="text-center mb-16">
           <span className="tag tag-green mb-4">院后闭环</span>
@@ -334,7 +334,7 @@ function ProcessSection() {
 // 技术架构组件
 function TechSection() {
   return (
-    <section className="py-24 bg-gray-900 text-white relative overflow-hidden">
+    <section id="tech" className="py-24 bg-gray-900 text-white relative overflow-hidden">
       {/* 背景效果 */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-cyan-500 rounded-full blur-3xl" />
@@ -560,11 +560,15 @@ function Navbar({ onStartAssessment }: { onStartAssessment: () => void }) {
             className="md:hidden p-2"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
-            {mobileMenuOpen ? (
-              <X className={`w-6 h-6 ${scrolled ? 'text-gray-900' : 'text-white'}`} />
-            ) : (
-              <div className={`w-6 h-0.5 ${scrolled ? 'bg-gray-900' : 'bg-white'} mb-1.5`} />
-            )}
+          {mobileMenuOpen ? (
+            <X className={`w-6 h-6 ${scrolled ? 'text-gray-900' : 'text-white'}`} />
+          ) : (
+            <div className="space-y-1.5">
+              <div className={`w-6 h-0.5 ${scrolled ? 'bg-gray-900' : 'bg-white'}`} />
+              <div className={`w-6 h-0.5 ${scrolled ? 'bg-gray-900' : 'bg-white'}`} />
+              <div className={`w-6 h-0.5 ${scrolled ? 'bg-gray-900' : 'bg-white'}`} />
+            </div>
+          )}
           </button>
         </div>
 
