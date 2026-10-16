@@ -7,6 +7,7 @@ import {
 import PatientForm from './components/PatientForm'
 import NutritionPlan from './components/NutritionPlan'
 import ChatAssistant from './components/ChatAssistant'
+import qrcodeWechat from './assets/qrcode-wechat.jpg'
 
 // 数字递增动画组件
 function CountUp({ end, duration = 2000, suffix = '' }: { end: number; duration?: number; suffix?: string }) {
@@ -628,7 +629,7 @@ function Footer() {
           <div>
             <h4 className="font-semibold mb-4">关注我们</h4>
             <img
-              src="/qrcode_for_gh_86c516276021_258.jpg"
+              src={qrcodeWechat}
               alt="微信公众号二维码"
               className="w-32 h-32 rounded-lg shadow-lg object-cover"
             />
